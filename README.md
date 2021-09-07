@@ -1,6 +1,7 @@
 # estudy-portifolio
 Portifolio do desenvolvedor
-## Taregas 
+
+## Tarefas 
 
 O controle das tarefas desse projeto será realizado no GitHub
 
