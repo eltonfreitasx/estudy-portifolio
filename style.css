@@ -508,13 +508,19 @@ header{
 }
 
 .field:focus ~ label{
-    top: 0;
+    transform: translateY(-1.4rem);
     font-size: 1rem;
 }
 
 .field:focus {
     border-bottom:  1px solid #00F260;
 }
+
+input:valid ~ label {
+    transform: translateY(-1.4rem);
+    font-size: 1rem;
+}
+
 
 .btn-submit {
     text-transform: uppercase;
