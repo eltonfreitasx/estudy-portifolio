@@ -243,12 +243,12 @@ header{
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 6rem);
+    grid-template-rows: repeat(7, 6rem);
     row-gap: .5rem;
 }
 
 .conhecimento:nth-child(1){
-    grid-column: 4 / 7;
+    grid-column: 3 / 6;
     grid-row: 1 / 3;
 }
 
@@ -263,7 +263,7 @@ header{
 }
 
 .conhecimento:nth-child(4){
-    grid-column: 11 / 14;
+    grid-column: 12 / 15;
     grid-row: 1 / 5;
 }
 
@@ -535,3 +535,46 @@ input:valid ~ label {
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
 }
+
+/*ORCAMENTO
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url(./Imagens/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    background-color: #00F260;
+    color: #fff;
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    padding: 0 3rem;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}*/
