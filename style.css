@@ -16,6 +16,10 @@
     --font-action: "Mulish", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     /*background-color: red;*/
     width: 2rem;
@@ -28,6 +32,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 150;
 }
 
 .show-menu .hamburguer{
@@ -152,6 +157,8 @@ header{
     top: 0;
     right: -20rem; /*fazer o evento de esconder o menu*/
     transition: all 1s;
+    z-index: 149;
+    
 }
 
 .show-menu .sidebar{
@@ -536,45 +543,52 @@ input:valid ~ label {
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
 }
 
-/*ORCAMENTO
 
-.sessao-orcamento{
+
+
+footer{
     width: 100%;
-    height: 100vh;
-    background: url(./Imagens/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg);
-    object-fit: cover;
+    height: 10rem;
+    background-color: #17181b;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.orcamento-wrapper{
+.foorter-content{
     width: 60%;
-    height: 80%;
-    background-color: #ffffff99;
-    border-radius: 10px;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sessao-orcamento h1{
-    background-color: #00F260;
+.foorter-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+
+#link-topo i {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0dc757;
     color: #fff;
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    padding: 0 3rem;
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    font-weight: lighter;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000000;
 }
-
-.sessao-orcamento form{
-    margin: 4rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
-}*/
